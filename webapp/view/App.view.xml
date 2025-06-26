@@ -4,7 +4,7 @@
     controllerName="sap.ui5.walkthrough.controller.App"
 >
     <Button
-        text="say hello"
+        text="{i18n>showHelloButtonText}"
         press=".onShowHello"
     />
     <Input
