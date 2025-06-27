@@ -1,8 +1,47 @@
 {
-  "_version": "1.65.0",
-  "sap.app": {
-    "id": "sap.ui5.walkthrough",
-    "type": "application",
-    "title": "UI5 typescript walkthrough"
-  }
+    "_version": "1.65.0",
+    "sap.app": {
+        "id": "sap.ui5.walkthrough",
+        "i18n": "i18n/i18n.properties",
+        "type": "application",
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "applicationVersion": {
+            "version": "1.0.0"
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "deviceTypes": {
+            "desktop": true,
+            "phone": true,
+            "tablet": true
+        }
+    },
+    "sap.ui5": {
+        "dependencies": {
+            "minUI5Version": "1.120",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {}
+            }
+        },
+        "rootView": {
+            "viewName": "sap.ui5.walkthrough.view.App",
+            "type": "XML",
+            "id": "app"
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "sap.ui5.walkthrough.i18n.i18n",
+                    "supportedLocales": [
+                        ""
+                    ],
+                    "fallbackLocale": ""
+                }
+            }
+        }
+    }
 }
