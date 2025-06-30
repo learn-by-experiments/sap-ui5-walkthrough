@@ -4,7 +4,7 @@
     controllerName="sap.ui5.walkthrough.controller.App"
 >
     <Shell>
-        <App>
+        <App class="sapUi5AppWalkthrough">
             <pages>
                 <Page title="{i18n>homePageTitle}">
                     <content>
@@ -17,7 +17,7 @@
                                 <Button
                                     text="{i18n>showHelloButtonText}"
                                     press=".onShowHello"
-                                    class="sapUiSmallMarginEnd"
+                                    class="customButton"
                                 />
                                 <Input
                                     value="{/name}"
@@ -27,7 +27,11 @@
                                 />
                                 <Text
                                     text="Hello {/name}"
-                                    class="sapUiSmallMargin"
+                                    class="sapUiSmallMargin customText"
+                                />
+                                <FormattedText
+                                    htmlText="Hello {/name}"
+                                    class="sapUiSmallMargin sapThemeHighlight-asColor customText"
                                 />
                             </content>
                         </Panel>
