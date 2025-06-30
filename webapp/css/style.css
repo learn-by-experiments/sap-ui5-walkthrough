@@ -1,0 +1,16 @@
+.sapUi5AppWalkthrough .customButton {
+  margin-right: 0.125rem;
+}
+
+.sapUi5AppWalkthrough .customText {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.customButton {
+  font-weight: bold;
+}
+
+.customText {
+  color: red;
+}
