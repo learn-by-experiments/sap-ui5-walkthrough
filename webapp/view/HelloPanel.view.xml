@@ -13,6 +13,7 @@
                 text="{i18n>showHelloButtonText}"
                 press=".onOpenDialog"
                 class="customButton"
+                icon="sap-icon://world"
             />
             <Input
                 value="{/name}"
